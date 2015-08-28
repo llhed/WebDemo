@@ -19,7 +19,7 @@ public class UserController {
     public String example(ModelMap modelMap,HttpServletRequest request){
 
         User usr = new User();
-        usr.setNickname("lim");
+        usr.setNickname("limeng");
 
         modelMap.put("usr",usr);
 
