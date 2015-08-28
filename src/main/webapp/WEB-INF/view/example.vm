@@ -6,7 +6,7 @@
 <body>
 <h1>Spring MVC and Velocity</h1>
 
-    hello vm
+    ${usr.nickname}
 
 <hr />
 Copyright &copy 2014 lm
