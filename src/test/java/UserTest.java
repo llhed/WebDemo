@@ -5,6 +5,8 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.List;
+
 /**
  * Created by lim on 2015/8/26.
  */
@@ -23,10 +25,28 @@ public class UserTest {
     @Test
     public void addUser(){
         User user = new User();
-        user.setNickname("你好");
+        user.setNickname("hello");
         user.setState(2);
-
         System.out.println(userService.insertUser(user));
+    }
+
+    @Test
+    public void findUser(){
+
+        System.out.println(userService.findUser(2).getNickname());
+    }
+
+    @Test
+    public void findAllUser(){
+        List<User> usrList = userService.findAllUser();
+        for(User user : usrList){
+            System.out.println(user.getNickname());
+        }
+    }
+
+    @Test
+    public void delUser(){
+        userService.delUser(2);
     }
 }
 
