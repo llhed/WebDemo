@@ -6,6 +6,7 @@ Maven&Mybatis&SpringMVC
 2.Velocity作为视图层模板引擎
 
 3.memcached缓存服务器集群，基于google xmemcached 1.3.7版本
+
 4.alibaba.druid
 
 待更新...
